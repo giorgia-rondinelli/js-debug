@@ -91,21 +91,20 @@ function checkAccessImproved() {
 
             if (email === userEmail) {
                 grantAccess = 'true';
-
+                console.log('Accesso consentito!')
             }
 
         }
 
-        if (grantAccess) {
-            console.log('Accesso consentito!');
-        } else {
+        else {
             console.log('Accesso negato!');
         }
     }
 }
     checkAccessImproved();
 
-
+// controlla con un ciclo se la mail inserita è presente nell'array e se composta almeno da 5 caratteri 
+// mancava la graffa 
 
 
 
