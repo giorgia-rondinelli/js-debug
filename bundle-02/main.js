@@ -1,67 +1,82 @@
-/*******************************************************************************
-​
-    Per questo esercizio, rispondi a queste domande:
-    1- Che cosa fa questo codice?
-    2- Sono presenti errori di sintassi?
-    3- Sono presenti errori logici?
-​
-    Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
-​
-*******************************************************************************/
+// /*******************************************************************************
+// ​
+//     Per questo esercizio, rispondi a queste domande:
+//     1- Che cosa fa questo codice?
+//     2- Sono presenti errori di sintassi?
+//     3- Sono presenti errori logici?
+// ​
+//     Inserisci i tuoi commenti con le risposte alla fine dell'esercizio
+// ​
+// *******************************************************************************/
 
 
-// ESERCIZIO 1
-function checkAge() {
-    const myAge = 32;
-    const message = '';
+// // ESERCIZIO 1
 
-    if (myAge < 18) {
-        message = `Sei troppo giovane! Hai ${myAge} anni!`;
-    } else {
-        message = 'Hai più di 18 anni!';
-    }
-}
-checkAge();
+// function checkAge() {
+//     const myAge = 32;
+//     let message = '';
 
-// ESERCIZIO 2
-function printColorsNumber() {
-    const colors = ['blue', 'red', 'yellow', 'green', 'black'];
-    console.log(`Nella mia palette ci sono ${colors.lenght} colori!`);
-}
-printColorsNumber();
+//     if (myAge < 18) {
+//        return message = `Sei troppo giovane! Hai ${myAge} anni!`;
+//     } 
+//     else {
+//         return message = 'Hai più di 18 anni!';
+//     }
+// }
+// console.log(checkAge());
 
-
-// ESERCIZIO 3
-function addNumbers() {
-    const userNumber = prompt('Inserisci un numero');
-    const total = userNumber + 12;
-
-    console.log(`Il risultato finale è ${total}`);
-}
-addNumbers();
+// // stampa un messaggio in base all'età 
+// // message deve essere una let 
+// // bisogna inserire return prima di message 
 
 
-// ESERCIZIO 4
-function checkAccess() {
-    const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
-    const userEmail = prompt('Inserisci il tuo indirizzo email');
 
-    let grantAccess = 'false';
+// // ESERCIZIO 2
+// function printColorsNumber() {
+//     const colors = ['blue', 'red', 'yellow', 'green', 'black'];
+//     console.log(`Nella mia palette ci sono ${colors.length} colori!`);
+// }
+// printColorsNumber();
 
-    if (addresses.includes(userEmail)) {
-        grantAccess = 'true';
-    }
+// // conta quanti colori ci sono nella palette 
+// // errore di scrittura di length
 
-    if (grantAccess === true) {
-        console.log('Accesso consentito!');
-    } else {
-        console.log('Accesso negato!');
-    }
-}
-checkAccess();
+// // // ESERCIZIO 3
+// function addNumbers() {
+//     const userNumber = parseInt(prompt('Inserisci un numero'));
+//     const total = userNumber + 12;
+
+//     console.log(`Il risultato finale è ${total}`);
+// }
+// addNumbers();
+
+// // somma il numero inserito dall'utente a 12
+// // va inserito un parseInt prima del prompt 
+
+// // // ESERCIZIO 4
+// function checkAccess() {
+//     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
+//     const userEmail = prompt('Inserisci il tuo indirizzo email');
+
+//     let grantAccess = 'false';
+
+//     if (addresses.includes(userEmail)) {
+//         grantAccess = 'true';
+//         console.log('Accesso consentito!')
+//     }
+
+   
+//      else {
+//         console.log('Accesso negato!');
+//     }
+// }
+// checkAccess();
+
+// controlla se la mail inserita è nell'array e stampa un messaggio di conseguenza 
+// elimino il secondo if e inserisco il console log nel primo if 
 
 
-// ESERCIZIO 5 (suggerimento: c'è un solo errore)
+// // ESERCIZIO 5 (suggerimento: c'è un solo errore)
 function checkAccessImproved() {
     const addresses = ['mymail@mail.com', 'yourmail@mail.com', 'hermail@mail.com', 'hismail@mail.com'];
 
@@ -87,6 +102,7 @@ function checkAccessImproved() {
             console.log('Accesso negato!');
         }
     }
+}
     checkAccessImproved();
 
 
